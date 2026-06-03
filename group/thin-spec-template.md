@@ -9,13 +9,14 @@ Thin SPEC không phải PRD đầy đủ. Đây là bản cam kết đủ rõ đ
 **User cụ thể:**  Khách đi VinWonders, đặc biệt là nhóm gia đình có trẻ em và người lớn tuổi, muốn có lịch trình cá nhân hóa theo mốc giờ để tối ưu trải nghiệm trong công viên.
 **Nhóm có phải user thật không? Nếu không, khác ở đâu?**  Nhóm này là user thật, dựa trên nhu cầu phổ biến của khách tham quan VinWonders. Tuy nhiên, trong prototype, chúng ta sẽ giả định thông tin đầu vào để tập trung vào việc tạo lịch trình cá nhân hóa, thay vì thu thập dữ liệu thực tế từ user.
 
+
 ## 2. Evidence summary
 
 | Evidence | Nguồn | User/pain nói lên điều gì? | SPEC phải đổi gì? |
 |---|---|---|---|
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| Nhiều khách đánh giá VinWonders Phú Quốc có diện tích lớn, nhiều khu vui chơi và hoạt động nên khó tự lên kế hoạch tham quan hiệu quả trong một ngày | Google Reviews, TripAdvisor, các bài review và kinh nghiệm du lịch VinWonders Phú Quốc | Khách mất nhiều thời gian quyết định nên đi đâu trước, dễ bỏ lỡ các điểm nổi bật hoặc di chuyển không tối ưu | AI phải tự động sắp xếp lịch trình theo mốc giờ và tối ưu thứ tự tham quan giữa các khu vực |
+| Các gia đình có trẻ em và người lớn tuổi phải cân nhắc độ tuổi, chiều cao và khả năng vận động khi lựa chọn hoạt động | Review của khách du lịch gia đình trên các diễn đàn và hội nhóm du lịch | Không phải hoạt động nào cũng phù hợp với mọi thành viên trong đoàn; gợi ý sai sẽ làm giảm trải nghiệm và vỡ lịch trình | Prototype phải có constraint filter theo độ tuổi, chiều cao, sức khỏe và mức độ vận động trước khi tạo lịch trình |
+| Khách thường bỏ lỡ các show diễn hoặc đến không đúng giờ do không nắm rõ lịch biểu diễn trong ngày | Blog du lịch, review trải nghiệm và hướng dẫn tham quan VinWonders Phú Quốc | Các show diễn là điểm nhấn quan trọng nhưng khó tự sắp xếp nếu không có kế hoạch từ trước | AI phải ưu tiên khóa các mốc giờ show diễn và hoạt động cố định trước khi sắp xếp các hoạt động còn lại |
 
 ## 3. Pain statement
 
@@ -134,12 +135,16 @@ Prototype sẽ xử lý bằng ask again + constraint filter + warning label:
 Owner kiểm thử path này là [Tên thành viên phụ trách test/failure path].
 ```
 
+
+
+
 ## 8. Owner plan cho sáng Day 06
 
 | Thành viên | Việc phụ trách | Bằng chứng cần có trong repo |
 |---|---|---|
-|  | Research / evidence |  |
-|  | SPEC |  |
-|  | Prototype |  |
-|  | Test / failure path |  |
-|  | Demo script / repo |  |
+| Hoàng Đức Trường | | |
+| Nguyễn Hoàng Tùng | | |
+| Nguyễn Hồ Diệu Linh | | |
+| Nguyễn Thị Bích Duyên | | |
+| Nguyễn Thị Hiểu | | |
+| Trần Hoàng Hà | | |
