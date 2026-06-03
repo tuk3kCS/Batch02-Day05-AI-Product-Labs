@@ -40,13 +40,20 @@ và xử lý [nguy cơ AI gợi ý sai hoạt động không phù hợp với đ
 Chọn một:
 
 - [ ] **Augmentation:** AI gợi ý/draft/phân loại, user quyết cuối.
-- [ ] **Conditional automation:** AI tự làm trong case hẹp; case mơ hồ/rủi ro chuyển người.
+- [x] **Conditional automation:** AI tự làm trong case hẹp; case mơ hồ/rủi ro chuyển người.
 - [ ] **Automation:** AI tự quyết và tự hành động.
 
 **Lý do chọn:**  
-**Human role:** reviewer / decider / trainer / rescuer / none  
+Prototype **tự tạo lịch trình theo mốc giờ** khi user nhập đủ thời gian, nhóm đi cùng và sở thích (happy path) — đây là tự động hóa phần sắp xếp, không chỉ gợi ý rời rạc. Tuy nhiên **không** để AI tự quyết và tự hành động end-to-end (Automation): user vẫn **xem, chọn dùng, sửa hoặc từ chối** từng hoạt động; AI không đặt vé hay ép lịch cuối cùng.
 
-Thay **phần 7** bằng đoạn dưới. Cấu trúc vẫn theo template Thin SPEC. 
+Điều kiện chuyển về người:
+- **Thiếu dữ liệu** → AI không tạo lịch ngay, hỏi lại (low-confidence).
+- **Rủi ro an toàn / độ tuổi** (trẻ em, người lớn tuổi, sức khỏe) → constraint filter + nhãn “cần kiểm tra điều kiện”; hoạt động nghi ngờ cần user xác nhận hoặc bấm “không phù hợp”.
+- **Sai hoặc đổi ý** → user sửa constraint; AI chỉ tính lại trong phạm vi user chấp nhận (correction / failure path).
+
+Không chọn thuần **Augmentation** vì mục tiêu Day 06 là deliverable **bản lịch trình hoàn chỉnh theo giờ**, không dừng ở draft bullet gợi ý. Không chọn **Automation** vì hậu quả gợi ý sai hoạt động (mất thời gian, lịch vỡ, rủi ro an toàn) vượt mức chấp nhận cho nhóm gia đình — cần human-in-the-loop trước khi coi lịch là “chốt”.
+
+**Human role:** **reviewer** (duyệt lịch trình trước khi dùng) · **decider** (chọn dùng / không phù hợp / sửa constraint) · **trainer** (bổ sung thông tin khi AI hỏi lại) · **rescuer** (khi failure path — thay hoạt động sai, giữ phiên không lặp gợi ý không phù hợp)
 
 ## 6. Four paths
 
