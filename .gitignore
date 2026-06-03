@@ -3,3 +3,9 @@
 Thumbs.db
 .idea/
 .vscode/
+
+.env
+./frontend/.env
+./frontend/node_modules
+./frontend/package-lock.json
+./frontend/README.md
