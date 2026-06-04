@@ -140,11 +140,10 @@ Owner kiểm thử path này là [Tên thành viên phụ trách test/failure pa
 
 ## 8. Owner plan cho sáng Day 06
 
-| Thành viên | Việc phụ trách | Bằng chứng cần có trong repo |
-|---|---|---|
-| Hoàng Đức Trường | | |
-| Nguyễn Hoàng Tùng | | |
-| Nguyễn Hồ Diệu Linh | | |
-| Nguyễn Thị Bích Duyên | | |
-| Nguyễn Thị Hiểu | | |
-| Trần Hoàng Hà | | |
+| Thành viên | Việc phụ trách | 
+|---|---|
+| Nguyễn Hồ Diệu Linh & Nguyễn Thị Bích Duyên | Research / evidence | 
+| Nguyễn Thị Hiểu | SPEC |  
+| Hoàng Đức Trường & Trần Hoàng Hà | Prototype |  
+| Nguyễn Hoàng Tùng | Test / failure path |  
+| Everyone | Demo script / repo |  
